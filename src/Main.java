@@ -1,14 +1,13 @@
-import java.sql.Array;
 import java.sql.SQLOutput;
 import java.util.Arrays;
 public class Main {
     public static void main(String[] args){
         int[] expenses = generateRandomArray();
         System.out.println(Arrays.toString(expenses));
-        System.out.println("Задание 1.0");
-        int sum = 0;
-        for ( int expense : expenses){
-            sum = expense + expense;
+        System.out.println("Задание 1");
+        double sum = 0;
+        for ( double expense : expenses){
+            sum = sum + expense;
         }
         System.out.println("Сумма трат за месяц составила " + sum + " рублей");
 
